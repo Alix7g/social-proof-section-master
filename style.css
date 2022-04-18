@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(images/bg-pattern-top-desktop.svg) , url(images/bg-pattern-bottom-desktop.svg);
+    font-family: 'Cairo', sans-serif;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
+header{
+    width: 30%;
+    margin: 40px 30px;
+    color: hsl(300, 43%, 22%);
+    float: left;
+}
+header h2{
+    width: 400px;
+    font-size: 40px;
+}
+header p{
+    font-size: 16px;
+    width: 400px;
+    
+}
+
+nav{
+    float: right;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 138px;
+    margin: 60px 40px;
+}
+nav .box{
+    background-color: #eee;
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.box:nth-child(2){
+    align-self: center;
+}
+.box:nth-child(3){
+    align-self: flex-end;
+}
+
+.fa-star{
+    color: orange;
+    margin: auto 2px;
+    font-size: 15px;
+}
+.box h2{
+    font-size: 14px;
+    margin: auto;
+    color: hsl(300, 43%, 22%);
+}
+
+main{
+    width: 900px;
+    height: 235px;
+    float: left;
+    transform: translateX(15%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+main .tweet{
+    width: 250px;
+    height: 200px;
+    background-color: black;
+    border-radius: 15px;
+    background-color: hsl(300, 43%, 22%);
+    
+
+}
+main .tweet:first-child{
+    align-self: flex-start;
+}
+main .tweet:last-child{
+    align-self: flex-end;
+}
+
+
+.tweet img{
+    margin: 12px 20px;
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+}
+
+.tweet h2{
+    font-size: 14px;
+    float: right;
+    transform: translate(-80px, 21px);
+    color: hsl(300, 24%, 96%);
+}
+.tweet p{
+    color: hsl(303, 10%, 53%);
+    font-size: 11px;
+    top: 40px;
+    left: 135px;
+    left: 10px;
+    position: relative;
+}
+.tweet h3{
+    font-size: 14px;
+    width: 250px;
+    text-align: left;
+    height: 109px;
+    display: inline-block;
+    color: #eee;
+    font-weight: 100;
+}
+
+
+
+
+
+/* media queries */
+@media (max-width:390px){
+    body{
+    background-image: url(images/bg-pattern-top-mobile.svg) , url(images/bg-pattern-bottom-mobile.svg);
+
+    }
+    header{
+        width: 100%;
+    }
+    /* child */
+    .box:nth-child(2), .box:nth-child(3), .box:nth-child(1){
+        align-self: center;
+    }
+    main{
+       
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100vh;
+    }
+    .tweet:first-child, .tweet:last-child{
+        align-self: center;
+    }
+}

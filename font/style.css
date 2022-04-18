@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(images/bg-pattern-top-desktop.svg);
+}
+
+header{
+    width: 50%;
+    margin: 80px;
+    font-size: 24px;
+    color: hsl(300, 43%, 22%);
+}
+header p{
+    font-size: 16px;
+    width: 400px;
+}
